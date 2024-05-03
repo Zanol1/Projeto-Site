@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <style>
         body {
             display: flex;
@@ -21,7 +22,7 @@
             display: flex;
             align-items: center;
             padding-left: 20px;
-            font-size: 20px;
+            font-size: 32px;
             font-weight: bold;
         }
         #top-bar a {
@@ -72,24 +73,16 @@
 <body>
     <div id="top-bar"><a href="#">Meu Portifólio</a></div>
     <div id="container">
-        <img id="profile-pic" src="https://th.bing.com/th/id/OIP.GHGGLYe7gDfZUzF_tElxiQHaHa?rs=1&pid=ImgDetMain alt="Profile Picture">
+        <img id="profile-pic" src="https://th.bing.com/th/id/OIP.GHGGLYe7gDfZUzF_tElxiQHaHa?rs=1&pid=ImgDetMain" alt="Imagem de perfil">
         <div id="text-area">Escrever aqui</div>
         <div id="buttons">
-            <button class="button">Sobre mim</button>
-            <button class="button">Portifólio</button>
-            <button class="button">Galeria</button>
-            <button class="button">Contato</button>
-            <button class="button">Button 5</button>
-            <button class="button">Button 6</button>
+            <button class="button" onclick="window.location.href='about.html'">Sobre mim</button>
+            <button class="button" onclick="window.location.href='portfolio.html'">Portifólio</button>
+            <button class="button" onclick="window.location.href='galeria.html'">Galeria</button>
+            <button class="button" onclick="window.location.href='contato.html'">Contato</button>
+            <button class="button" onclick="window.location.href='pagina5.html'">Button 5</button>
+            <button class="button" onclick="window.location.href='pagina6.html'">Button 6</button>
         </div>
     </div>
-    <script>
-        var buttons = document.getElementsByClassName('button');
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener('click', function() {
-                alert('Button clicked!');
-            });
-        }
-    </script>
 </body>
 </html>
