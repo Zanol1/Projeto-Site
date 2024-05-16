@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+        #top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #a07952;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        #top-bar a {
+            color: black;
+            text-decoration: none;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: lightgray;
+            margin-top: 60px; /* Ajustado para deixar espaço para a barra superior fixa */
+            height: 180px; /* Ajustado para deixar espaço para a barra superior fixa */
+            width: 15%; /* Ajustado para a largura desejada */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #title {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+        #text-area {
+            width: 100%;
+            background-color: lightgray;
+            padding: 10px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar"><a href="index.html">Meu Portifólio</a></div>
+    <div id="container">
+        <div id="title">Contato</div>
+         <div id="text-area">Gostou do que viu e quer mais?<br> Você pode me encontrar pelas seguintes formas:<br>Email: grzanol@ucs.br<br>Telefone: +55 54 99936-9206<br> Obrigado pela Atenção!</div>
+    </div>
+</body>
+</html>
