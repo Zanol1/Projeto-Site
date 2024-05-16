@@ -36,12 +36,11 @@
             gap: 20px;
             padding: 20px;
             background-color: lightgray;
-            margin-top: 10px;
-            height: 70vh;
+            margin-top: 60px; /* Ajustado para deixar espaço para a barra superior fixa */
+            height: calc(70vh - 60px); /* Ajustado para deixar espaço para a barra superior fixa */
             width: 30%;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            margin: auto;
         }
         #profile-pic {
             width: 200px;
@@ -58,13 +57,13 @@
         }
         #buttons {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
             width: 100%;
-            flex-grow: 1;
+            height: 100%; /* Ajustado para preencher o espaço restante */
         }
         .button {
-            padding: 10px 20px;
+            padding: 20px;
             background-color: #a07952;
             color: white;
             border: none;
@@ -72,11 +71,10 @@
             border-radius: 7px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s;
-            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-grow: 1;
+            height: 100%; /* Ajustado para preencher o espaço da célula */
         }
         .button:hover {
             transform: translateY(-10px);
@@ -91,10 +89,8 @@
         <div id="buttons">
             <button class="button" onclick="window.location.href='about.html'">Sobre mim</button>
             <button class="button" onclick="window.location.href='https://github.com/Zanol1'">Portifólio</button>
-            <button class="button" onclick="window.location.href='galeria.html'">Galeria</button>
+            <button class="button" onclick="window.location.href='galery.html'">Galeria</button>
             <button class="button" onclick="window.location.href='contato.html'">Contato</button>
-            <button class="button" onclick="window.location.href='pagina5.html'">Button 5</button>
-            <button class="button" onclick="window.location.href='pagina6.html'">Button 6</button>
         </div>
     </div>
 </body>
